@@ -2,9 +2,9 @@
 #include <math.h>
 #include <stdio.h>
 
-sigmoid::sigmoid(double x2one, double x2zero)
+sigmoid::sigmoid(double x2zero, double x2one)
 {
-	double x_len = (x2one - x2zero) / 2;
+	double x_len = (x2zero - x2one) / 2;
 	b_ = (x2zero + x2one) / 2;
 	if(x_len == 0){
 		a_ = 0;
